@@ -14,8 +14,6 @@ import "./App.scss";
 import Navigation from "./components/navigation";
 import MobileNavigation from "./components/mobile-navigation";
 
-const NotFoundView = React.lazy(() => import("./views/notFound"));
-
 const App = () => (
     <Router>
         <MobileNavigation />
@@ -56,8 +54,6 @@ const App = () => (
                             {routes.map((route, key) => (
                                 <Route {...route} exact key={key} />
                             ))}
-                            <Route path="/404" exact component={NotFoundView} />
-                            <Redirect from="*" to="/404" />
                         </Suspense>
                     </Switch>
                 </Col>
