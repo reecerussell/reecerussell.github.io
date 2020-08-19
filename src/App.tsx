@@ -12,15 +12,17 @@ import content from "./_content";
 import * as profilePicture from "./assets/profile.JPG";
 import "./App.scss";
 import Navigation from "./components/navigation";
+import MobileNavigation from "./components/mobile-navigation";
 
 const NotFoundView = React.lazy(() => import("./views/notFound"));
 
 const App = () => (
     <Router>
+        <MobileNavigation />
         <Container>
             <Row>
                 <Col lg="3" md="4">
-                    <Card>
+                    <Card id="profile">
                         <img src={profilePicture} alt="Profile Picture" />
                         <CardHeader tag="header" id="heading">
                             <h2>Reece Russell</h2>

@@ -7,7 +7,7 @@ const Navigation = () => {
     const { pathname } = useLocation();
 
     return (
-        <nav className="r-shadow">
+        <nav className="r-shadow main-bar">
             <ul>
                 {nav.map((item, key) => (
                     <li

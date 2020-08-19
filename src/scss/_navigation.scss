@@ -1,7 +1,9 @@
-nav {
+nav.main-bar {
     background-color: #fff;
     margin-bottom: 30px;
     z-index: 10;
+    position: relative;
+    display: none;
 
     ul {
         list-style: none;
@@ -36,5 +38,126 @@ nav {
                 border-bottom: 3px solid $primary;
             }
         }
+    }
+}
+
+.mobile-bar {
+    background-color: #fff;
+    margin-bottom: 30px;
+    display: flex;
+
+    .brand {
+        color: $secondary;
+        padding: $box-padding;
+        display: block;
+        flex: 60%;
+    }
+
+    .mobile-nav-toggle {
+        padding: 20px 25px;
+
+        button {
+            border: 0;
+            outline: 0;
+            background-color: #fff;
+            border: 1px solid $secondary;
+            border-radius: 3px;
+            color: $secondary;
+            font-size: 18px;
+            flex: 40%;
+
+            &:hover {
+                background-color: $secondary;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.mobile-navigation {
+    position: absolute;
+    z-index: 100;
+    display: none;
+    top: 0;
+    min-height: 100vh;
+    width: 80%;
+    margin-left: 20%;
+    background-color: #fff;
+    @extend .r-shadow;
+
+    &.open {
+        display: block;
+    }
+
+    .brand {
+        padding: $box-padding;
+        color: $secondary;
+        font-size: 22px;
+        font-weight: 600;
+        border-bottom: 1px dashed $border-color;
+
+        button {
+            border: 0;
+            outline: 0;
+            background-color: #fff;
+            border: 1px solid $secondary;
+            border-radius: 3px;
+            color: $secondary;
+            font-size: 18px;
+            float: right;
+
+            &:hover {
+                background-color: $secondary;
+                color: #fff;
+            }
+        }
+    }
+
+    nav {
+        padding: $box-padding;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                &.active a {
+                    color: $primary;
+                }
+
+                a {
+                    display: block;
+                    color: $light-grey;
+                    padding: 3px 0;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        padding: $box-padding;
+        border-top: 1px dashed $border-color;
+
+        p {
+            font-size: 14px;
+            color: $light-grey;
+        }
+    }
+}
+
+@media (min-width: $medium-min-width) {
+    nav.main-bar {
+        display: block;
+    }
+
+    .mobile-bar,
+    .mobile-navigation.open {
+        display: none;
     }
 }
