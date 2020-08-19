@@ -73,7 +73,7 @@ const About = () => {
                 <Row>
                     {services.map((service, key) => (
                         <Col md="4" sm="6" key={key}>
-                            <i className={classNames("lab", service.icon)} />
+                            <i className={classNames("las", service.icon)} />
                             <span>
                                 <b>{service.header}</b>
                                 <p>{service.description}</p>
