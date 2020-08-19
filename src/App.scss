@@ -54,10 +54,10 @@ p {
 }
 
 #services {
-    padding: 45px 30px;
+    padding: 45px 30px 15px 30px;
 
     .row > div {
-        margin-bottom: 0;
+        margin-bottom: 30px;
 
         i {
             background-color: $secondary;
