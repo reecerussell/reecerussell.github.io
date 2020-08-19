@@ -1,24 +1,53 @@
 import React from "react";
-import { Card, CardHeader, CardBody } from "reactstrap";
+import { Card, CardHeader, CardBody, CardFooter } from "reactstrap";
+import content from "../_content";
 
-const Resume = () => (
-    <Card>
-        <CardHeader>
-            <h2>My Resume</h2>
-        </CardHeader>
-        <CardBody id="resume">
-            <div className="rounded-icon">
-                <i className="las la-graduation-cap"></i>
-            </div>
-            <div className="wrapper">
-                <div className="resume-item">
-                    <h2>Level 4 Diploma Software Languages</h2>
-                    <span className="date">2018 - 2019</span>
-                    <p>Some information about this course.</p>
+const Resume = () => {
+    const { title, education, experience } = content.resume;
+
+    return (
+        <Card>
+            <CardHeader>
+                <h2>{title}</h2>
+            </CardHeader>
+            <CardBody id="resume">
+                <div className="rounded-icon">
+                    <i className="las la-graduation-cap"></i>
                 </div>
-            </div>
-        </CardBody>
-    </Card>
-);
+                <div className="resume-items">
+                    {education.map((item, key) => (
+                        <div className="resume-item" key={key}>
+                            <h2>{item.title}</h2>
+                            <span className="date">
+                                {item.date.start} - {item.date.finish}
+                            </span>
+                            <p>{item.description}</p>
+                        </div>
+                    ))}
+                </div>
+
+                <div className="rounded-icon">
+                    <i className="las la-briefcase"></i>
+                </div>
+                <div className="resume-items">
+                    {experience.map((item, key) => (
+                        <div className="resume-item" key={key}>
+                            <h2>{item.title}</h2>
+                            <span className="date">
+                                {item.date.start} - {item.date.finish}
+                            </span>
+                            <p>{item.description}</p>
+                        </div>
+                    ))}
+                </div>
+            </CardBody>
+            <CardFooter>
+                <p
+                    dangerouslySetInnerHTML={{ __html: content.copyrightText }}
+                ></p>
+            </CardFooter>
+        </Card>
+    );
+};
 
 export default Resume;

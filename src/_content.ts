@@ -69,5 +69,28 @@ export default {
             },
         ],
     },
+    resume: {
+        title: "My Resume",
+        education: [
+            {
+                title: "Level 4 Diplma Soft. Langs",
+                date: {
+                    start: "2018",
+                    finish: "2019",
+                },
+                description: "lorem ipsum",
+            },
+        ],
+        experience: [
+            {
+                title: "Level 4 Diplma Soft. Langs",
+                date: {
+                    start: "2018",
+                    finish: "2019",
+                },
+                description: "lorem ipsum",
+            },
+        ],
+    },
     copyrightText: `Copyright &copy; ${new Date().getFullYear()} - All rights reserved`,
 };
