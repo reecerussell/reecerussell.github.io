@@ -92,5 +92,8 @@ export default {
             },
         ],
     },
+    notFound: {
+        title: "Page Not Found",
+    },
     copyrightText: `Copyright &copy; ${new Date().getFullYear()} - All rights reserved`,
 };

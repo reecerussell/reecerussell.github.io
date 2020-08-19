@@ -7,7 +7,6 @@ const ResumeView = React.lazy(() => import("./views/resume"));
 const routes: RouteProps[] = [
     {
         path: "/",
-        exact: true,
         component: AboutView,
     },
     {
