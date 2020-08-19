@@ -10,22 +10,23 @@ export default {
     },
     socials: [
         {
-            url: "#",
+            url: "https://www.instagram.com/_reecerussell/",
             title: "Instagram",
             icon: "la-instagram",
         },
         {
-            url: "#",
+            url: "https://twitter.com/_reecerussell",
             title: "Twitter",
             icon: "la-twitter",
         },
         {
-            url: "#",
+            url:
+                "https://www.linkedin.com/in/reece-russell-software-developer/",
             title: "LinkedIn",
             icon: "la-linkedin-in",
         },
         {
-            url: "#",
+            url: "https://github.com/reecerussell",
             title: "GitHub",
             icon: "la-github",
         },
@@ -35,23 +36,15 @@ export default {
         info: [
             {
                 name: "Name",
-                value: "Reece",
+                value: "Reece Russell",
             },
             {
-                name: "Name",
-                value: "Reece",
+                name: "Email",
+                value: "me@reece-russell.co.uk",
             },
             {
-                name: "Name",
-                value: "Reece",
-            },
-            {
-                name: "Name",
-                value: "Reece",
-            },
-            {
-                name: "Name",
-                value: "Reece",
+                name: "Job",
+                value: "Software Developer",
             },
         ],
         body: {
@@ -66,15 +59,19 @@ export default {
         skills: [
             {
                 title: "C# / .NET Core 1",
+                progress: 90,
+            },
+            {
+                title: "Go",
+                progress: 65,
+            },
+            {
+                title: "JavaScript / ReactJS",
                 progress: 80,
             },
             {
-                title: "C# / .NET Core 2",
-                progress: 80,
-            },
-            {
-                title: "C# / .NET Core 3",
-                progress: 80,
+                title: "SQL",
+                progress: 70,
             },
         ],
         services: [
@@ -107,9 +104,6 @@ export default {
                 description: "lorem ipsum",
             },
         ],
-    },
-    notFound: {
-        title: "Page Not Found",
     },
     copyrightText: `Copyright &copy; ${new Date().getFullYear()} - All rights reserved`,
 };

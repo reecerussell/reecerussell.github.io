@@ -1,10 +1,5 @@
 import React, { Suspense } from "react";
-import {
-    HashRouter as Router,
-    Route,
-    Switch,
-    Redirect,
-} from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { Container, Row, Col, Card, CardHeader, CardBody } from "reactstrap";
 import classNames from "classnames";
 import routes from "./routes";
