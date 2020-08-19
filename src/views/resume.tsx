@@ -8,7 +8,7 @@ const Resume = () => {
     return (
         <Card>
             <CardHeader>
-                <h2>{title}</h2>
+                <h1>{title}</h1>
             </CardHeader>
             <CardBody id="resume">
                 <div className="rounded-icon">

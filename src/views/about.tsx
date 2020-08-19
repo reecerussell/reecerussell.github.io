@@ -14,7 +14,7 @@ const About = () => {
     return (
         <Card>
             <CardHeader>
-                <h2>{title}</h2>
+                <h1>{title}</h1>
             </CardHeader>
             <CardBody>
                 <ul className="r-info-list">
