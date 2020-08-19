@@ -4,6 +4,7 @@ import content from "../_content";
 
 const Resume = () => {
     const { title, education, experience } = content.resume;
+    document.title = title + " | " + content.meta.baseTitle;
 
     return (
         <Card>

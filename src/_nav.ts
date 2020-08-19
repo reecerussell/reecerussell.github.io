@@ -7,8 +7,4 @@ export default [
         text: "Resume",
         path: "/resume",
     },
-    {
-        text: "Portfolio",
-        path: "/portfolio",
-    },
 ];

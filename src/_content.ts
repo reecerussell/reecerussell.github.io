@@ -1,8 +1,3 @@
-export interface AboutInfoProps {
-    name: string;
-    value: string;
-}
-
 export default {
     meta: {
         baseTitle:
@@ -76,9 +71,22 @@ export default {
         ],
         services: [
             {
-                icon: "la-apple",
-                header: "Applications",
-                description: "Lots of world-class applications.",
+                icon: "la-code",
+                header: "Development",
+                description:
+                    "Built static websites with either HTML or ReactJS.",
+            },
+            {
+                icon: "la-server",
+                header: "RESTful Services",
+                description:
+                    "Experience with Go and .NET Core RESTful web APIs.",
+            },
+            {
+                icon: "la-database",
+                header: "SQL",
+                description:
+                    "Designed and maintained relational database systems, such as SQL Server and MySQL.",
             },
         ],
     },
@@ -86,22 +94,33 @@ export default {
         title: "My Resume",
         education: [
             {
-                title: "Level 4 Diplma Soft. Langs",
+                title: "Software Development Methodologies",
                 date: {
                     start: "2018",
                     finish: "2019",
                 },
-                description: "lorem ipsum",
+                description:
+                    "I completed a BCS level 4 diploma in software development methodologies, with a focus on agile principles, practises and teams.",
+            },
+            {
+                title: "Software Languages",
+                date: {
+                    start: "2018",
+                    finish: "2019",
+                },
+                description:
+                    "Alongside the Software Development Methodologies, I gained another level 4 diploma in software languages, mainly looking at event-driven and object-oriented C#.NET",
             },
         ],
         experience: [
             {
-                title: "Level 4 Diplma Soft. Langs",
+                title: "Software Developer, Prominent Media",
                 date: {
                     start: "2018",
-                    finish: "2019",
+                    finish: "Present",
                 },
-                description: "lorem ipsum",
+                description:
+                    "Fullstack software developer working on a range of custom CRM systems, built using C#.NET and MySQL, following domain-driven design and CQRS principles. As well as, building static, and database driven, brouchure websites using either static HTML, .NET MVC or ReactJS.",
             },
         ],
     },
