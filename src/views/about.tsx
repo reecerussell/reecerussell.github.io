@@ -2,10 +2,11 @@ import React from "react";
 import { Row, Col, Card, CardHeader, CardBody, CardFooter } from "reactstrap";
 import classNames from "classnames";
 import content from "../_content";
+import { setTitle } from "../utils/page";
 
 const About = () => {
     const { title, info, body, skills, services } = content.about;
-    document.title = title + " | " + content.meta.baseTitle;
+    setTitle(title);
 
     const halfLengthOfSkills = Math.ceil(skills.length / 2);
     const firstHalf = skills.slice(0, halfLengthOfSkills);

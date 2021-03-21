@@ -16,7 +16,7 @@ const App = () => (
             <Row>
                 <Col lg="3" md="4">
                     <Card id="profile">
-                        <img src={profilePicture} alt="Profile Picture" />
+                        <img src={profilePicture} alt="Reece Russell" />
                         <CardHeader tag="header" id="heading">
                             <h2>Reece Russell</h2>
                             <h4>Software Developer</h4>

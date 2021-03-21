@@ -1,10 +1,11 @@
 import React from "react";
 import { Card, CardHeader, CardBody, CardFooter } from "reactstrap";
+import { setTitle } from "../utils/page";
 import content from "../_content";
 
 const Resume = () => {
     const { title, education, experience } = content.resume;
-    document.title = title + " | " + content.meta.baseTitle;
+    setTitle(title);
 
     return (
         <Card>

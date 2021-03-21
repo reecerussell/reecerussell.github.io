@@ -133,5 +133,46 @@ export default {
             },
         ],
     },
+    projects: {
+        title: "My Projects",
+        items: [
+            {
+                name: "gojwt",
+                tags: ["Go"],
+                repo: "https://github.com/reecerussell/gojwt",
+                description:
+                    "A lightweight, extensible, Go module used to build, sign and verify JSON-Web-Tokens.",
+            },
+            {
+                name: "TxCommand",
+                tags: ["C#"],
+                repo: "https://github.com/reecerussell/tx-command",
+                description:
+                    "A small commanding library used to give support for CQRS commands to execute within a database transaction.",
+            },
+            {
+                name: "migrations",
+                tags: ["Go", "Docker"],
+                repo: "https://github.com/reecerussell/migrations",
+                description:
+                    "A migrations tool, designed for database migraions, written in Go with the idea being migrations would be applied from a CI/CD pipeline.",
+            },
+            {
+                name: "Open Social",
+                tags: ["Go", "k8s", "React"],
+                repo: "https://github.com/reecerussell/open-social",
+                description:
+                    "An open-source social media platform with Go-powered microservices, utilising Kubernetes and Google Cloud PLatform.",
+            },
+            {
+                name: "Adaptive Password Hasher",
+                tags: ["Go"],
+                repo:
+                    "https://github.com/reecerussell/adaptive-password-hasher",
+                description:
+                    "A simple, fully customisable password hashing package in Go. Using the PBKDF2 algorithm, this package takes all of the noisey overhead out of hashing passwords.",
+            },
+        ],
+    },
     copyrightText: `Copyright &copy; ${new Date().getFullYear()} - All rights reserved`,
 };
