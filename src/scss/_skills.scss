@@ -8,7 +8,7 @@ ul.skills {
             display: block;
             margin-bottom: 0;
             font-size: 14px;
-            color: #000;
+            color: $text-color-dark-2;
             font-weight: 700;
         }
 
@@ -19,7 +19,7 @@ ul.skills {
             position: relative;
             width: 100%;
             overflow: visible;
-            background: #fff;
+            background: $bg-light;
             border: 1px solid $secondary;
 
             .percentage {

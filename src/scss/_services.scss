@@ -1,0 +1,29 @@
+#services {
+    padding: 45px 30px 15px 30px;
+
+    .row > div {
+        margin-bottom: 30px;
+
+        i {
+            background-color: $secondary;
+            width: 55px;
+            height: 55px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 50px;
+            text-align: center;
+            padding-top: 18px;
+            float: left;
+            color: $bg-light;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        span {
+            padding-top: 6px;
+            display: inline-block;
+            line-height: 20px;
+            font-size: 16px;
+        }
+    }
+}

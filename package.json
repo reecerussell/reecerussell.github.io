@@ -24,10 +24,17 @@
         "typescript": "^3.7.7"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
+        "start": "run-p start:*",
+        "start:react": "react-scripts start",
+        "start:styles": "run-p styles-dev:*",
+        "build": "run-s build:styles build:react",
+        "build:react": "react-scripts build",
+        "build:styles": "run-p styles:*",
+        "styles:light": "node-sass src/scss/theme/light.scss public/styles/light.css --output-style compressed",
+        "styles:dark": "node-sass src/scss/theme/dark.scss public/styles/dark.css --output-style compressed",
+        "styles-dev": "run-p styles-dev:*",
+        "styles-dev:light": "node-sass src/scss/theme/light.scss public/styles/light.css --watch --include-path src/scss --source-map public/styles/light.css.map",
+        "styles-dev:dark": "node-sass src/scss/theme/dark.scss public/styles/dark.css --watch --include-path src/scss --source-map public/styles/dark.css.map",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
     },
@@ -48,6 +55,7 @@
     },
     "devDependencies": {
         "node-sass": "^4.14.1",
+        "npm-run-all": "^4.1.5",
         "react-scripts": "^3.4.4"
     }
 }

@@ -1,0 +1,76 @@
+@import "vendors";
+@import "fonts";
+@import "variables";
+@import "navigation";
+@import "infoList";
+@import "card";
+@import "socialLinks";
+@import "skills";
+@import "resume";
+@import "services";
+@import "projects";
+
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    background-color: $background-color;
+    padding: 0 0 40px 0;
+    color: $text-color-dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+#heading {
+    text-align: center;
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    h4 {
+        color: $text-color-light;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+    }
+}
+
+#socials {
+    padding: 20px;
+}
+
+.r-shadow {
+    -webkit-box-shadow: -2px -1px 40px 0px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: -2px -1px 40px 0px rgba(0, 0, 0, 0.17);
+    box-shadow: -2px -1px 40px 0px rgba(0, 0, 0, 0.17);
+}
+
+#profile {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 5;
+}
+
+@media (min-width: $medium-min-width) {
+    #profile {
+        margin-bottom: 0;
+    }
+
+    body {
+        padding: 50px 0 40px 0;
+    }
+}

@@ -5,7 +5,6 @@ import classNames from "classnames";
 import routes from "./routes";
 import content from "./_content";
 import * as profilePicture from "./assets/profile.JPG";
-import "./App.scss";
 import Navigation from "./components/navigation";
 import MobileNavigation from "./components/mobile-navigation";
 
