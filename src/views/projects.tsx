@@ -26,9 +26,7 @@ const Projects: FunctionComponent = () => {
                         <CardHeader>
                             <h4>{project.name}</h4>
                         </CardHeader>
-                        <CardBody className="text-muted">
-                            {project.description}
-                        </CardBody>
+                        <CardBody>{project.description}</CardBody>
                         <CardFooter>
                             <a
                                 href={project.repo}

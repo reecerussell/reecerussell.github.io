@@ -8,10 +8,10 @@
     li {
         flex: 100%;
         font-size: 14px;
-        color: $light-grey;
+        color: $text-color-light;
 
         span {
-            color: #212529;
+            color: $text-color-dark;
         }
     }
 }
