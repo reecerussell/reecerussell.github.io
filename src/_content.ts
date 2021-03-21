@@ -114,10 +114,19 @@ export default {
         ],
         experience: [
             {
+                title: "Software Engineer, Sainsbury's Tech",
+                date: {
+                    start: "Oct 2020",
+                    finish: "Present",
+                },
+                description:
+                    "Supporting and maintaining a number of internal SaaS solutions, built with .NET Core and SQL Server/MongoDB, following event-driven and microservice patterns. As well as, managing and setting up infrastructure in Azure and Kubernetes using IaaC approaches.",
+            },
+            {
                 title: "Software Developer, Prominent Media",
                 date: {
-                    start: "2018",
-                    finish: "Present",
+                    start: "Sept 2018",
+                    finish: "Oct 2020",
                 },
                 description:
                     "Fullstack software developer working on a range of custom CRM systems, built using C#.NET and MySQL, following domain-driven design and CQRS principles. As well as, building static, and database driven, brouchure websites using either static HTML, .NET MVC or ReactJS.",
