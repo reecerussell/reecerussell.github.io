@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Redirect, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useLocation, Link } from "react-router-dom";
 import classNames from "classnames";
 import nav from "../_nav";
 import content from "../_content";
@@ -8,33 +8,17 @@ const MobileNavigation = () => {
     const { pathname } = useLocation();
     const [isOpen, setOpen] = useState(false);
     const toggle = () => setOpen(!isOpen);
-    const [redirectLocation, setRedirect] = useState("");
 
-    const navigate = (e: any) => {
-        e.preventDefault();
+    useEffect(() => {
         setOpen(false);
-        setRedirect(e.target.dataset.target);
-    };
-
-    if (redirectLocation === pathname) {
-        setRedirect("");
-    }
-
-    if (redirectLocation.length > 0) {
-        return <Redirect to={redirectLocation} />;
-    }
+    }, [pathname]);
 
     return (
         <>
             <div className="r-shadow mobile-bar">
-                <a
-                    href="#"
-                    data-target="/"
-                    className="brand"
-                    onClick={navigate}
-                >
+                <Link to="/" className="brand">
                     Reece Russell
-                </a>
+                </Link>
                 <div className="mobile-nav-toggle">
                     <button
                         type="button"
@@ -67,13 +51,7 @@ const MobileNavigation = () => {
                                     active: pathname === item.path,
                                 })}
                             >
-                                <a
-                                    href="#"
-                                    data-target={item.path}
-                                    onClick={navigate}
-                                >
-                                    {item.text}
-                                </a>
+                                <Link to={item.path}>{item.text}</Link>
                             </li>
                         ))}
                     </ul>
